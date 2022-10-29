@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Interactive Pricing Component</title>
+
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+  
+    <div class="pricing-container">
+      <div class="pricing-container-header">
+        <div class="page-views-container">
+          <span class="page-views">100k</span>
+          <span> pageviews</span>
+        </div>
+        <div class="price-container">
+          <span class="pricing">$16.00</span>
+          <span>
+            / month
+          </span>
+        </div>
+      </div>
+      <form class="range-slider" autocomplete="off">
+        <label for="rangeSlider"></label>
+        <div class="fill-bar">
+          <span class="fill dynamic-fill"></span>
+        </div>
+        <input
+          type="range"
+          min="20"
+          max="100"
+          value="60"
+          step="20"
+          name="selectedPrice"
+          class="slider dynamic-slider"
+          id="rangeSlider"
+        />
+      </form>
+      <div class="biling-container">
+        <div class="frequecy-selector">
+          <span>Monthly Biling</span>
+          <label class="switch">
+            <input class="toggle" type="checkbox">
+            <span class="toggler round"></span>
+          </label>
+          <span>Yearly Biling</span>
+        </div>
+        <div class="discount-label">
+          <span>25%<span>discount</span></span>
+        </div>
+      </div>
+      <hr>
+      <div class="pricing-container-footer">
+        <ul>
+          <li>
+            <span>Unlimited websites</span>
+          </li>
+          <li>
+            <span>100% data ownership</span>
+          </li>
+          <li>
+            <span>Email reports</span>
+          </li>
+        </ul>
+        <div class="button-container">
+          <button type="button" class="start-button">
+            Start my trial
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+<!--   Simple, traffic-based pricing
+  Sign-up for our 30-day trial. No credit card required. 
+
+  Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial -->
+
+  <script src="index.js"></script>
+</body>
+</html>
